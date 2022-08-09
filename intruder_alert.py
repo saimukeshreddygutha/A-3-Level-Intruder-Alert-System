@@ -1,7 +1,7 @@
 import keysandids, json, time  #importing all the ids, json to load the content in json format
 from boltiot import Email, Bolt, Sms  #impoting bolt class, Email for sending mail and Sms for sending sms
 mybolt = Bolt(keysandids.bolt_api_key, keysandids.bolt_device_id)    #for bolt cloud to identify your device
-isOn = myboly.isOnline()    #to check the status of the system
+isOn = mybolt.isOnline()    #to check the status of the system
 print(isOn)
 c = 0   #this constant is used to turn off the buzzer
 if isOn[-2] == '1':   #isOn[-2] gives 1 if the system is online and 0 the other case
